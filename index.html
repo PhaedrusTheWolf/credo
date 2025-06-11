@@ -1,26 +1,110 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Credo Picks - Coming Soon</title>
+  <title>Credo Picks - Curated Shopping</title>
   <style>
     body {
-      font-family: sans-serif;
-      text-align: center;
-      padding: 50px;
+      font-family: system-ui, sans-serif;
       background-color: #f4f6f8;
+      color: #333;
+      margin: 0;
+      padding: 40px;
     }
     h1 {
-      color: #333;
+      text-align: center;
+      color: #2f3b52;
+      font-size: 2em;
+      margin-bottom: 20px;
     }
-    p {
-      color: #666;
+    p.subtitle {
+      text-align: center;
+      font-size: 1em;
+      color: #555;
+      margin-bottom: 40px;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .product-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 20px;
+    }
+    .product-tile {
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      padding: 16px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      transition: transform 0.2s;
+    }
+    .product-tile:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    }
+    .product-tile img {
+      max-width: 100%;
+      border-radius: 4px;
+      margin-bottom: 10px;
+    }
+    .product-tile h2 {
+      font-size: 1.1em;
+      margin: 0 0 10px;
+      text-align: center;
+    }
+    .product-tile a {
+      text-decoration: none;
+      color: #4CAF50;
+      font-weight: bold;
+    }
+    .product-tile a:hover {
+      text-decoration: underline;
+    }
+    footer {
+      margin-top: 40px;
+      text-align: center;
+      font-size: 0.9em;
+      color: #888;
     }
   </style>
 </head>
 <body>
   <h1>Credo Picks</h1>
-  <p>Our new platform for product insights is launching soon. Stay tuned!</p>
-  <a href="privacy.html">Privacy Policy</a>
+  <p class="subtitle">A curated selection of top picks from trusted friends and reviewers.</p>
+
+  <div class="product-grid">
+    <div class="product-tile">
+      <img src="https://via.placeholder.com/200" alt="Product 1" />
+      <h2>Product 1</h2>
+      <a href="#" target="_blank">Shop Now</a>
+    </div>
+    <div class="product-tile">
+      <img src="https://via.placeholder.com/200" alt="Product 2" />
+      <h2>Product 2</h2>
+      <a href="#" target="_blank">Shop Now</a>
+    </div>
+    <div class="product-tile">
+      <img src="https://via.placeholder.com/200" alt="Product 3" />
+      <h2>Product 3</h2>
+      <a href="#" target="_blank">Shop Now</a>
+    </div>
+    <div class="product-tile">
+      <img src="https://via.placeholder.com/200" alt="Product 4" />
+      <h2>Product 4</h2>
+      <a href="#" target="_blank">Shop Now</a>
+    </div>
+    <div class="product-tile">
+      <img src="https://via.placeholder.com/200" alt="Product 5" />
+      <h2>Product 5</h2>
+      <a href="#" target="_blank">Shop Now</a>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 Credo Picks. No paid placements. All picks are curated and trusted.
+  </footer>
 </body>
 </html>
