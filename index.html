@@ -2,136 +2,109 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Credo Picks - Curated Shopping</title>
+  <title>Credo Picks – Trusted Product Discovery</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <style>
     body {
       font-family: system-ui, sans-serif;
       background-color: #FCF7F1;
-      color: #333;
+      color: #3B3721;
       margin: 0;
-      padding: 40px;
+      padding: 0;
     }
-    h1 {
+
+    header {
       text-align: center;
-      color: #2f3b52;
-      font-size: 2em;
+      padding: 40px 20px 20px;
+    }
+
+    header img.logo {
+      width: 220px;
       margin-bottom: 20px;
     }
-    p.subtitle {
+
+    .intro {
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 0 20px;
       text-align: center;
-      font-size: 1em;
-      color: #555;
-      margin-bottom: 40px;
-      max-width: 600px;
-      margin-left: auto;
-      margin-right: auto;
     }
-    .product-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-      gap: 20px;
-    }
-    .product-tile {
-      background: white;
-      border-radius: 8px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-      padding: 16px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      transition: transform 0.2s;
-    }
-    .product-tile:hover {
-      transform: translateY(-3px);
-      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
-    }
-    .product-tile img {
-      max-width: 100%;
-      border-radius: 4px;
+
+    .intro h1 {
+      font-size: 2.2rem;
       margin-bottom: 10px;
+      color: #2f3b52;
     }
-    .product-tile h2 {
-      font-size: 1.1em;
-      margin: 0 0 10px;
-      text-align: center;
+
+    .intro p {
+      font-size: 1.1rem;
+      margin-bottom: 30px;
+      color: #555;
     }
-    .product-tile a {
-      text-decoration: none;
-      color: #4CAF50;
-      font-weight: bold;
+
+    .store-button {
+      display: inline-block;
+      margin-bottom: 30px;
     }
-    .product-tile a:hover {
-      text-decoration: underline;
+
+    .store-button img {
+      height: 60px;
     }
+
+    .screenshot {
+      display: flex;
+      justify-content: center;
+      padding: 30px 20px;
+      background-color: #f3ede3;
+    }
+
+    .screenshot img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
     footer {
-      margin-top: 40px;
       text-align: center;
-      font-size: 0.9em;
+      font-size: 0.9rem;
       color: #888;
+      padding: 40px 20px;
+    }
+
+    @media (max-width: 600px) {
+      .intro h1 {
+        font-size: 1.6rem;
+      }
+
+      .store-button img {
+        height: 50px;
+      }
     }
   </style>
 </head>
 <body>
-  <div style="display: flex; justify-content: center;">
-    <img src="Credo_Full_Header_logo.png" alt="Credo Logo" style="width: 240px; height: auto">
-  </div>
-  <p class="subtitle">A curated selection of top picks from trusted friends and reviewers. Credo earns money only via affiliate links, which means only when you purchase items after clicking a link within Credo. We do not accept or perform paid placements, free products, bot reviews, etc.</p>
-  <p class="subtitle">We will soon be launching a browser extension for Google Chrome!</p>
-  <div class="product-grid">
-    <div class="product-tile">
-     <a href="https://amzn.to/401IEaH" target="_blank" style="text-decoration: none; color: inherit;">
-        <img src="https://m.media-amazon.com/images/I/81wH95AetFL._SY522_.jpg" 
-             alt="Product Name" 
-             style="width: 100%; height: auto; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
-      </a>
-      <a href="https://amzn.to/401IEaH" target="_blank" style="text-decoration: none; color: inherit;">
-        <h2>Sesame Street 5-Minute Stories (Sesame Street)</h2>
+  <header>
+    <img src="Credo_Full_Header_logo.png" alt="Credo Logo" class="logo" />
+  </header>
+
+  <section class="intro">
+    <h1>Discover Trusted Product Picks</h1>
+    <p>Credo is a Chrome extension that helps you find and share real product recommendations from real people. No ads. No fake reviews. Just what your friends actually use and love.</p>
+
+    <div class="store-button">
+      <a href="https://chromewebstore.google.com/detail/credo-picks-v05/ecnldilmhgflckjdmkbfmlcbifeamenl" target="_blank">
+        <img src="https://developer.chrome.com/static/images/brand-guidelines/chrome-web-store-badge@2x.png" alt="Get it on Chrome Web Store">
       </a>
     </div>
-    <div class="product-tile">
-     <a href="https://amzn.to/4jOCqSD" target="_blank" style="text-decoration: none; color: inherit;">
-        <img src="https://m.media-amazon.com/images/I/61CnI9XOs6L._SL1000_.jpg" 
-             alt="Product Name" 
-             style="width: 100%; height: auto; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
-      </a>
-      <a href="https://amzn.to/4jOCqSD" target="_blank" style="text-decoration: none; color: inherit;">
-        <h2>Philips Avent Soothie 0-3 Months Orthodontic Baby Pacifiers</h2>
-      </a>
-    </div>
-    <div class="product-tile">
-     <a href="https://amzn.to/4jQ5zwI" target="_blank" style="text-decoration: none; color: inherit;">
-        <img src="https://m.media-amazon.com/images/I/71Fxazy50lL._AC_SL1500_.jpg" 
-             alt="Product Name" 
-             style="width: 100%; height: auto; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
-      </a>
-      <a href="https://amzn.to/4jQ5zwI" target="_blank" style="text-decoration: none; color: inherit;">
-        <h2>Virbac C.E.T. Enzymatic Toothpaste</h2>
-      </a>
-    </div>
-    <div class="product-tile">
-     <a href="https://amzn.to/4081cGr" target="_blank" style="text-decoration: none; color: inherit;">
-        <img src="https://m.media-amazon.com/images/I/71upvJRdzEL._AC_SL1500_.jpg" 
-             alt="Product Name" 
-             style="width: 100%; height: auto; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
-      </a>
-      <a href="https://amzn.to/4081cGr" target="_blank" style="text-decoration: none; color: inherit;">
-        <h2>CURTA 4 Pack Food Storage Container with Green Lid</h2>
-      </a>
-    </div>
-    <div class="product-tile">
-     <a href="https://amzn.to/4mYhfAp" target="_blank" style="text-decoration: none; color: inherit;">
-        <img src="https://m.media-amazon.com/images/I/61yoN+jt5tL._AC_SL1200_.jpg" 
-             alt="Product Name" 
-             style="width: 100%; height: auto; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.1);">
-      </a>
-      <a href="https://amzn.to/4mYhfAp" target="_blank" style="text-decoration: none; color: inherit;">
-        <h2>Magicteam Sound Machine White Noise Machine</h2>
-      </a>
-    </div>
-  </div>
+  </section>
+
+  <section class="screenshot">
+    <img src="Credo_ScreenShot_1280x800.png" alt="Credo Dashboard Screenshot" />
+  </section>
 
   <footer>
-    &copy; 2025 Credo Picks. No paid placements. All picks are curated and trusted.
+    &copy; 2025 Credo Picks &mdash; No paid placements. Just real recommendations.
   </footer>
 </body>
 </html>
